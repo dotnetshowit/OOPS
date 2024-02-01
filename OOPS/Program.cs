@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOPS.Inheritance;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,9 +15,9 @@ namespace OOPS
 
             Student student = new Student();
 
-            student.StudentName;
+            //student.StudentName;
 
-            student.StudentId = 1;
+            //student.StudentId = 1;
 
             var studentID = student.StudentAge;
 
@@ -32,7 +33,7 @@ namespace OOPS
 
             
 
-            Console.ReadLine();
+            //Console.ReadLine();
 
 
             // form values
@@ -46,6 +47,20 @@ namespace OOPS
 
             //context.saveChanges(studentToAdd);
 
+
+            // MultiLevel Inheritance
+
+            Child child = new Child();
+            child.ChildProperty = 1;
+            child.ParentProperty = 1;
+            child.Print();
+
+
+
+            //Parent parent = new Parent();
+            //parent.ParentProperty
+
+            Console.ReadLine();
 
         }
     }

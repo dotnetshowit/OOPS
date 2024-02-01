@@ -15,6 +15,8 @@ namespace OOPS
         private string LastName;
         private DateTime dateOfBirth;
 
+        public int Age;
+
         //public int Student { get; set; }
         public int StudentId { 
             get
