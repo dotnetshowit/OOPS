@@ -1,4 +1,5 @@
-﻿using OOPS.Inheritance;
+﻿using OOPS.Encapsulation;
+using OOPS.Inheritance;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,12 +51,21 @@ namespace OOPS
 
             // MultiLevel Inheritance
 
-            Child child = new Child();
-            child.ChildProperty = 1;
-            child.ParentProperty = 1;
-            child.Print();
+            //Child child = new Child();
+            //child.ChildProperty = 1;
+            //child.ParentProperty = 1;
+            //child.Print();
 
+            Bank bank = new Bank();
+            Console.WriteLine(bank.Balance);
 
+            bank.Deposit(100);
+
+            Console.WriteLine(bank.Balance);
+
+            bank.Withdraw(50);
+
+            Console.WriteLine(bank.Balance);
 
             //Parent parent = new Parent();
             //parent.ParentProperty
