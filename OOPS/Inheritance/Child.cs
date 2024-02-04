@@ -17,8 +17,7 @@ namespace OOPS.Inheritance
 
         public override void Print()
         {
-            base.Print();
-            Console.WriteLine("From Child");
+            Console.WriteLine(x);
         }
     }
 

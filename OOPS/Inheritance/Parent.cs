@@ -8,6 +8,8 @@ namespace OOPS.Inheritance
 {
     public class Parent
     {
+        protected int x = 10; //  string declared as protected
+
         public Parent()
         {
             Console.WriteLine("Parent Constructor");

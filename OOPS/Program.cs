@@ -1,8 +1,12 @@
-﻿using OOPS.Encapsulation;
+﻿using AssemblyOne;
+using OOPS.Abstraction;
+using OOPS.Encapsulation;
 using OOPS.Inheritance;
+using OOPS.Polymorphism;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -56,22 +60,73 @@ namespace OOPS
             //child.ParentProperty = 1;
             //child.Print();
 
-            Bank bank = new Bank();
-            Console.WriteLine(bank.Balance);
+            //Bank bank = new Bank();
+            //Console.WriteLine(bank.Balance);
 
-            bank.Deposit(100);
+            //bank.Deposit(100);
 
-            Console.WriteLine(bank.Balance);
+            //Console.WriteLine(bank.Balance);
 
-            bank.Withdraw(50);
+            //bank.Withdraw(50);
 
-            Console.WriteLine(bank.Balance);
+            //Console.WriteLine(bank.Balance);
 
             //Parent parent = new Parent();
             //parent.ParentProperty
 
+
+            Parent obj = new Parent();
+            
+            //obj.
+
+
+            Child objChild = new Child();
+            
+            
+            //Parent obj1 = new Child();
+
+            //obj1.Print();
+
+            Fruit fruit = new Fruit();
+            //Apple apple = new Apple();
+
+            Fruit apple = new Apple();
+            Console.WriteLine(apple.GetName());
+            Fruit orange = new Orange();
+            Console.WriteLine(orange.GetName());
+
+
+            //Class1 objClass = new Class1();
+
+            Poly poly = new Poly();
+            poly.Add(1, 2);
+            poly.Add(1.2f, 2.4f);
+            poly.Add("SHOWIT", "DOTNET");
+
+
+
+            //Abstraction.Bank bank = new Abstraction.Bank();
+            Abstraction.Bank hdfc = new HDFC();
+            hdfc.CheckBalance();
+            hdfc.Welcome();
+
+
+            Abstraction.Bank axis = new AXIS();
+            axis.CheckBalance();
+            axis.Welcome();
+
+
+            IBank sbi = new SBI();
+            sbi.CheckBalance();
+
             Console.ReadLine();
 
+
+            Shape circle = new Circle();
+            circle.GetArea();
+
+            Shape square = new Square();
+            square.GetArea();
         }
     }
 }

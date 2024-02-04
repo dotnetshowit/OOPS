@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D49E840-DBD6-4CC6-AA66-4F67959FA7A5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>OOPS</RootNamespace>
-    <AssemblyName>OOPS</AssemblyName>
+    <ProjectGuid>{5AD567D0-AF67-4BD8-B020-E8BE78646282}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssemblyOne</RootNamespace>
+    <AssemblyName>AssemblyOne</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,36 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstraction\AXIS.cs" />
-    <Compile Include="Abstraction\Bank.cs" />
-    <Compile Include="Abstraction\Circle.cs" />
-    <Compile Include="Abstraction\HDFC.cs" />
-    <Compile Include="Abstraction\IBank.cs" />
-    <Compile Include="Abstraction\SBI.cs" />
-    <Compile Include="Abstraction\Shape.cs" />
-    <Compile Include="Abstraction\Square.cs" />
-    <Compile Include="Encapsulation\Bank.cs" />
-    <Compile Include="Inheritance\Child.cs" />
-    <Compile Include="Inheritance\Parent.cs" />
-    <Compile Include="Inheritance\ParentTwo.cs" />
-    <Compile Include="Polymorphism\Apple.cs" />
-    <Compile Include="Polymorphism\Fruit.cs" />
-    <Compile Include="Polymorphism\Orange.cs" />
-    <Compile Include="Polymorphism\Poly.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SignInDTO.cs" />
-    <Compile Include="SignUpDTO.cs" />
-    <Compile Include="Student.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AssemblyOne\AssemblyOne.csproj">
-      <Project>{5ad567d0-af67-4bd8-b020-e8be78646282}</Project>
-      <Name>AssemblyOne</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
